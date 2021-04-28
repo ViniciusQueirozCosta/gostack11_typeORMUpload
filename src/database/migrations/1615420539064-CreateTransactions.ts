@@ -11,6 +11,7 @@ export default class CreateTransactions1615420539064 implements MigrationInterfa
                         name: "id",
                         type: "uuid",
                         isPrimary: true,
+                        generationStrategy: 'uuid',
                         default: 'uuid_generate_v4',
                     },
                     {
