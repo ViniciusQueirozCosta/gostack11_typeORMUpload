@@ -1,4 +1,9 @@
-import {MigrationInterface, QueryRunner, Table, TableColumn, TableForeignKey} from "typeorm";
+import {
+    MigrationInterface, 
+    QueryRunner,
+    TableColumn,
+    TableForeignKey
+} from "typeorm";
 
 export default class AddCategoryIdToTransactions1615421246507 implements MigrationInterface {
 
@@ -20,7 +25,7 @@ export default class AddCategoryIdToTransactions1615421246507 implements Migrati
                 referencedTableName: 'categories',
                 name: 'TransactionCategory',
                 onUpdate: 'CASCADE',
-                onDelete: 'SET NULL',
+                onDelete: 'Set NULL',
             }),
         );
     }

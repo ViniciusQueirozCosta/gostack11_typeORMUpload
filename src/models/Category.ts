@@ -1,9 +1,10 @@
-import { Entity,
+import {
+  Entity,
   Column,
   PrimaryGeneratedColumn,
   CreateDateColumn,
   UpdateDateColumn
-} from 'typeorm'
+} from 'typeorm';
 
 @Entity('categories')
 class Category {
